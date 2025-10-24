@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfxaf5eewjkhj"]
+
+[ext_resource type="Script" uid="uid://bd600oqred1ak" path="res://player_gato.gd" id="1_uuxqg"]
+[ext_resource type="Texture2D" uid="uid://dbdiqwef67op4" path="res://Assets/player_gato/Exemplo_gato.png" id="2_n4vya"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4qfka"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n4vya")
+}],
+"loop": true,
+"name": &"Exemplo",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b2pd"]
+size = Vector2(22, 33.5)
+
+[node name="player_gato" type="CharacterBody2D"]
+script = ExtResource("1_uuxqg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(22, 20)
+sprite_frames = SubResource("SpriteFrames_4qfka")
+animation = &"Exemplo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(22, 20)
+shape = SubResource("RectangleShape2D_2b2pd")
