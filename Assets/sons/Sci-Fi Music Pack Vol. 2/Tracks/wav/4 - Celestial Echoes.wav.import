@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ch1finnfl5b8l"
+path="res://.godot/imported/4 - Celestial Echoes.wav-a5cf5e70d04d01528b9f0655e85f4fea.sample"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/wav/4 - Celestial Echoes.wav"
+dest_files=["res://.godot/imported/4 - Celestial Echoes.wav-a5cf5e70d04d01528b9f0655e85f4fea.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

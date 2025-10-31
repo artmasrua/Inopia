@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpf42oa6ea8l2"
-path="res://.godot/imported/water2.png-c1d4696657a82b57d2c4a6cf552c955e.ctex"
+path="res://.godot/imported/water2.png-082d02f080087b0041b869064f3f17d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/starry_night_by_quintino_pixels/Water/water2.png"
-dest_files=["res://.godot/imported/water2.png-c1d4696657a82b57d2c4a6cf552c955e.ctex"]
+source_file="res://Assets/TileSet/1/Water/water2.png"
+dest_files=["res://.godot/imported/water2.png-082d02f080087b0041b869064f3f17d3.ctex"]
 
 [params]
 

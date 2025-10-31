@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkt7y4b1joko3"
-path="res://.godot/imported/Flag.png-1980ed89d853d45de311d52afcbd59e0.ctex"
+path="res://.godot/imported/Flag.png-7f3095dfeb94cfa4c5380a8e2af5e5a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/3 Objects/Flag.png"
-dest_files=["res://.godot/imported/Flag.png-1980ed89d853d45de311d52afcbd59e0.ctex"]
+source_file="res://Assets/objetos/3 Objects/Flag.png"
+dest_files=["res://.godot/imported/Flag.png-7f3095dfeb94cfa4c5380a8e2af5e5a0.ctex"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ck6un4fgsd0kn"
+path="res://.godot/imported/6 - Orbital Echoes (Loop).mp3-1b2441bd49bf9f68e8e5871256ac6b3b.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Loops/mp3/6 - Orbital Echoes (Loop).mp3"
+dest_files=["res://.godot/imported/6 - Orbital Echoes (Loop).mp3-1b2441bd49bf9f68e8e5871256ac6b3b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

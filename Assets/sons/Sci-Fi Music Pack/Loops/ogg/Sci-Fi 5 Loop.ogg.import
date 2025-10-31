@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnwg05ejq01ea"
+path="res://.godot/imported/Sci-Fi 5 Loop.ogg-dd75a56e515c1bd6b54ce5105f7f20ac.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack/Loops/ogg/Sci-Fi 5 Loop.ogg"
+dest_files=["res://.godot/imported/Sci-Fi 5 Loop.ogg-dd75a56e515c1bd6b54ce5105f7f20ac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

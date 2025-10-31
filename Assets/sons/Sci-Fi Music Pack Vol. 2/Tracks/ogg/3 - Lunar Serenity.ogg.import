@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vnlbcy4s3rma"
+path="res://.godot/imported/3 - Lunar Serenity.ogg-dd0e13ab76c175bfc1933e299e7fe539.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/ogg/3 - Lunar Serenity.ogg"
+dest_files=["res://.godot/imported/3 - Lunar Serenity.ogg-dd0e13ab76c175bfc1933e299e7fe539.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

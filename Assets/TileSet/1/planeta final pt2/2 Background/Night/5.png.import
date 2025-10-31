@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drmxho2mya8ua"
-path="res://.godot/imported/5.png-b5139c13ad2b87c18119ed7d183c53da.ctex"
+path="res://.godot/imported/5.png-c5d79edb21e266610282902edc078398.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/5.png"
-dest_files=["res://.godot/imported/5.png-b5139c13ad2b87c18119ed7d183c53da.ctex"]
+source_file="res://Assets/TileSet/1/planeta final pt2/2 Background/Night/5.png"
+dest_files=["res://.godot/imported/5.png-c5d79edb21e266610282902edc078398.ctex"]
 
 [params]
 

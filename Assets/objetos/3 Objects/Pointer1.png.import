@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw2sbkmbaj456"
-path="res://.godot/imported/Pointer1.png-e7efbc3f441540cc66a038349b267156.ctex"
+path="res://.godot/imported/Pointer1.png-6e4eb4eb2bd37b7dd7e7eec3f590741a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/3 Objects/Pointer1.png"
-dest_files=["res://.godot/imported/Pointer1.png-e7efbc3f441540cc66a038349b267156.ctex"]
+source_file="res://Assets/objetos/3 Objects/Pointer1.png"
+dest_files=["res://.godot/imported/Pointer1.png-6e4eb4eb2bd37b7dd7e7eec3f590741a.ctex"]
 
 [params]
 

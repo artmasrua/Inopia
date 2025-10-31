@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxf7ne4qx8vip"
+path="res://.godot/imported/3 - Lunar Serenity (Loop).mp3-629657df62dcf2ea00e3445d6f24960e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Loops/mp3/3 - Lunar Serenity (Loop).mp3"
+dest_files=["res://.godot/imported/3 - Lunar Serenity (Loop).mp3-629657df62dcf2ea00e3445d6f24960e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u3wdaeuumtqn"
-path="res://.godot/imported/Card.png-525137fb983d7dee10b870f6c28ab427.ctex"
+path="res://.godot/imported/Card.png-d766810a880d17136f3d05e33c4ec3db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/4 Animated objects/Card.png"
-dest_files=["res://.godot/imported/Card.png-525137fb983d7dee10b870f6c28ab427.ctex"]
+source_file="res://Assets/objetos/4 Animated objects/Card.png"
+dest_files=["res://.godot/imported/Card.png-d766810a880d17136f3d05e33c4ec3db.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btfob4dnemx5h"
-path="res://.godot/imported/0.png-6682450976dbbb755a5bca6debc17e13.ctex"
+path="res://.godot/imported/0.png-ac6b1f0457ecfeff774ba590e9ebd0ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/3 Objects/0.png"
-dest_files=["res://.godot/imported/0.png-6682450976dbbb755a5bca6debc17e13.ctex"]
+source_file="res://Assets/objetos/3 Objects/0.png"
+dest_files=["res://.godot/imported/0.png-ac6b1f0457ecfeff774ba590e9ebd0ad.ctex"]
 
 [params]
 

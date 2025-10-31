@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bofdth0ldglky"
-path="res://.godot/imported/Barrel2.png-d140e22acad11c0d3ee561630adb2895.ctex"
+path="res://.godot/imported/Barrel2.png-93d9e0ccbacc203e635d1724c8fdf141.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/3 Objects/Barrel2.png"
-dest_files=["res://.godot/imported/Barrel2.png-d140e22acad11c0d3ee561630adb2895.ctex"]
+source_file="res://Assets/objetos/3 Objects/Barrel2.png"
+dest_files=["res://.godot/imported/Barrel2.png-93d9e0ccbacc203e635d1724c8fdf141.ctex"]
 
 [params]
 

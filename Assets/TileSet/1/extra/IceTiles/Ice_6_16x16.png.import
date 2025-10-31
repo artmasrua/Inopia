@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br5o8vv1lg067"
-path="res://.godot/imported/Ice_6_16x16.png-da39f91a035048d08193883c0fd61e10.ctex"
+path="res://.godot/imported/Ice_6_16x16.png-227a9d9330fcde627d493d93ff611416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Starter Tiles - Platformer/Starter Tiles Platformer/IceTiles/Ice_6_16x16.png"
-dest_files=["res://.godot/imported/Ice_6_16x16.png-da39f91a035048d08193883c0fd61e10.ctex"]
+source_file="res://Assets/TileSet/1/extra/IceTiles/Ice_6_16x16.png"
+dest_files=["res://.godot/imported/Ice_6_16x16.png-227a9d9330fcde627d493d93ff611416.ctex"]
 
 [params]
 

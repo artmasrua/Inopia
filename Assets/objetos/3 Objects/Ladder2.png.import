@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btb7oyn8bj4kp"
-path="res://.godot/imported/Ladder2.png-a77f4d790049944f2e33cb3ffd90d5c9.ctex"
+path="res://.godot/imported/Ladder2.png-f092563c727248470690b7c5c4d08e05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/3 Objects/Ladder2.png"
-dest_files=["res://.godot/imported/Ladder2.png-a77f4d790049944f2e33cb3ffd90d5c9.ctex"]
+source_file="res://Assets/objetos/3 Objects/Ladder2.png"
+dest_files=["res://.godot/imported/Ladder2.png-f092563c727248470690b7c5c4d08e05.ctex"]
 
 [params]
 

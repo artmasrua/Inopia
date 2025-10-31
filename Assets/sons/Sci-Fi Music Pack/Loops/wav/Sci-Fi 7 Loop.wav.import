@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbjs07h14ksmt"
+path="res://.godot/imported/Sci-Fi 7 Loop.wav-489e949a9e1db099425bc15276cea143.sample"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack/Loops/wav/Sci-Fi 7 Loop.wav"
+dest_files=["res://.godot/imported/Sci-Fi 7 Loop.wav-489e949a9e1db099425bc15276cea143.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

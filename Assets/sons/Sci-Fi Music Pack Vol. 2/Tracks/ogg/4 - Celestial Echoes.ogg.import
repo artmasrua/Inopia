@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bh5akdt8oo44w"
+path="res://.godot/imported/4 - Celestial Echoes.ogg-1c9dd9ed004afcfbf1ba13052e36f62b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/ogg/4 - Celestial Echoes.ogg"
+dest_files=["res://.godot/imported/4 - Celestial Echoes.ogg-1c9dd9ed004afcfbf1ba13052e36f62b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

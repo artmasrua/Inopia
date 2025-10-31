@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvxw5s4gix13c"
-path="res://.godot/imported/DarkCastle_17_16x16.png-48473bf0646187301fd6830d235e3016.ctex"
+path="res://.godot/imported/DarkCastle_17_16x16.png-7b9daa6f42da872acc94fa10199443f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Starter Tiles - Platformer/Starter Tiles Platformer/DarkCastleTiles/DarkCastle_17_16x16.png"
-dest_files=["res://.godot/imported/DarkCastle_17_16x16.png-48473bf0646187301fd6830d235e3016.ctex"]
+source_file="res://Assets/TileSet/1/rota de fuga pt3/Starter Tiles Platformer/DarkCastleTiles/DarkCastle_17_16x16.png"
+dest_files=["res://.godot/imported/DarkCastle_17_16x16.png-7b9daa6f42da872acc94fa10199443f8.ctex"]
 
 [params]
 

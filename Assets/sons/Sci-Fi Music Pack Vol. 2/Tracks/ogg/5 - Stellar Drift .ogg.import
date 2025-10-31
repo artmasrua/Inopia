@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://driabiwjfhlae"
+path="res://.godot/imported/5 - Stellar Drift .ogg-ad216ad87b088b1e987051257643cadd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/ogg/5 - Stellar Drift .ogg"
+dest_files=["res://.godot/imported/5 - Stellar Drift .ogg-ad216ad87b088b1e987051257643cadd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

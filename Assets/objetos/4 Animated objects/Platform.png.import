@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce83xwnxtv7sm"
-path="res://.godot/imported/Platform.png-44f9f95a7701c61278eac6c4c9540518.ctex"
+path="res://.godot/imported/Platform.png-c091c0b2f2e8198cb3195d036922759b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/4 Animated objects/Platform.png"
-dest_files=["res://.godot/imported/Platform.png-44f9f95a7701c61278eac6c4c9540518.ctex"]
+source_file="res://Assets/objetos/4 Animated objects/Platform.png"
+dest_files=["res://.godot/imported/Platform.png-c091c0b2f2e8198cb3195d036922759b.ctex"]
 
 [params]
 

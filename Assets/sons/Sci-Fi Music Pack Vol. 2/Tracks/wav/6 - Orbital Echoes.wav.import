@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvhtsixrmax4r"
+path="res://.godot/imported/6 - Orbital Echoes.wav-953bf13bcbb74fd2c3aa835c284422e3.sample"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/wav/6 - Orbital Echoes.wav"
+dest_files=["res://.godot/imported/6 - Orbital Echoes.wav-953bf13bcbb74fd2c3aa835c284422e3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

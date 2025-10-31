@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bk31lxokit8mp"
+path="res://.godot/imported/Sci-Fi 1 Loop.wav-47ec4cccb2f49039d99deafb022ef67a.sample"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack/Loops/wav/Sci-Fi 1 Loop.wav"
+dest_files=["res://.godot/imported/Sci-Fi 1 Loop.wav-47ec4cccb2f49039d99deafb022ef67a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

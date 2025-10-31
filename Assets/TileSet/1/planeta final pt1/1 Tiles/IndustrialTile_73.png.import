@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy4kt5f8rioj6"
-path="res://.godot/imported/IndustrialTile_73.png-d8e88aaf6bfbd15109af7218ef38012e.ctex"
+path="res://.godot/imported/IndustrialTile_73.png-439a057a6c23d8d30287674020c504da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/Free Industrial Zone Tileset/1 Tiles/IndustrialTile_73.png"
-dest_files=["res://.godot/imported/IndustrialTile_73.png-d8e88aaf6bfbd15109af7218ef38012e.ctex"]
+source_file="res://Assets/TileSet/1/planeta final pt1/1 Tiles/IndustrialTile_73.png"
+dest_files=["res://.godot/imported/IndustrialTile_73.png-439a057a6c23d8d30287674020c504da.ctex"]
 
 [params]
 

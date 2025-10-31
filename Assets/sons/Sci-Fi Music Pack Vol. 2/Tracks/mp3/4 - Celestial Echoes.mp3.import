@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bi31dfig8t436"
+path="res://.godot/imported/4 - Celestial Echoes.mp3-c678fb19a7784086eccb7ee98b951af3.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/mp3/4 - Celestial Echoes.mp3"
+dest_files=["res://.godot/imported/4 - Celestial Echoes.mp3-c678fb19a7784086eccb7ee98b951af3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

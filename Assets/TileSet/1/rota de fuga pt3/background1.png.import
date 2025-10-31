@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr8ytg5c7381u"
-path="res://.godot/imported/background1.png-3aec53b5f058fb093531f87af399ae19.ctex"
+path="res://.godot/imported/background1.png-cc024793a917377f98ce6135eb9be8df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TileSet/1/PixelFantasy_Caves_1.0/background1.png"
-dest_files=["res://.godot/imported/background1.png-3aec53b5f058fb093531f87af399ae19.ctex"]
+source_file="res://Assets/TileSet/1/rota de fuga pt3/background1.png"
+dest_files=["res://.godot/imported/background1.png-cc024793a917377f98ce6135eb9be8df.ctex"]
 
 [params]
 

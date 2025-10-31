@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c6mmne61rcc4o"
+path="res://.godot/imported/2 - Galactic Odyssey.wav-5bd4429b3cbebb2fc549a4b93dff9b61.sample"
+
+[deps]
+
+source_file="res://Assets/sons/Sci-Fi Music Pack Vol. 2/Tracks/wav/2 - Galactic Odyssey.wav"
+dest_files=["res://.godot/imported/2 - Galactic Odyssey.wav-5bd4429b3cbebb2fc549a4b93dff9b61.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

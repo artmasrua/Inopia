@@ -19,6 +19,13 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="ground"
+2d_physics/layer_3="enemy/trap"
+2d_physics/layer_4="itens"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
