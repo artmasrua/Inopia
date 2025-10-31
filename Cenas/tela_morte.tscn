@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://cld2j402mxysh"]
+
+[ext_resource type="Texture2D" uid="uid://dye6t4rrixc02" path="res://Assets/Tela_Morte/TelaFinal_Morte.png" id="1_rtxmt"]
+[ext_resource type="Script" uid="uid://b5whjuepbar7q" path="res://Cenas/tela_morte.gd" id="2_13rag"]
+[ext_resource type="FontFile" uid="uid://t7pao8phnpul" path="res://Assets/fonte/pixeloid-font/PixeloidMono-d94EV.ttf" id="2_mtyu1"]
+
+[node name="Tela_Morte" type="Sprite2D"]
+position = Vector2(640, 358)
+texture = ExtResource("1_rtxmt")
+script = ExtResource("2_13rag")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -804.0
+offset_top = -222.585
+offset_right = -476.0
+offset_bottom = -122.584885
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mtyu1")
+theme_override_font_sizes/font_size = 32
+text = "Jogar Novamente"
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mtyu1")
+theme_override_font_sizes/font_size = 32
+text = "Sair"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
