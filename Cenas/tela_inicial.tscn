@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbqwowmbt1mki"]
 
-[ext_resource type="Script" uid="uid://ja7dqmmthqsp" path="res://Cenas/tela_inicial.gd" id="1_00dnc"]
+[ext_resource type="Script" path="res://Cenas/tela_inicial.gd" id="1_00dnc"]
 [ext_resource type="Texture2D" uid="uid://c4rf2bvadl51r" path="res://Assets/Tela_inicial/tela_inicial_0.png" id="1_b1rrf"]
 [ext_resource type="FontFile" uid="uid://ktipu4brov01" path="res://Assets/fonte/pixeloid-font/PixeloidSansBold-PKnYd.ttf" id="2_ouhyk"]
 [ext_resource type="FontFile" uid="uid://t7pao8phnpul" path="res://Assets/fonte/pixeloid-font/PixeloidMono-d94EV.ttf" id="3_00dnc"]

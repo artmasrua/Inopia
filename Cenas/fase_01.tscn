@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=4 uid="uid://o156h2kd170c"]
+[gd_scene load_steps=9 format=4 uid="uid://drw10v4rl6m6c"]
 
 [ext_resource type="Texture2D" uid="uid://dghlv4v17gucf" path="res://Assets/TileSet/1/wasteland (fase 1)/Wasteland-Files.png" id="1_obb1c"]
 [ext_resource type="Texture2D" uid="uid://0agxhuugsbwk" path="res://Assets/TileSet/1/wasteland (fase 1)/Wasteland_Mountains_1.png" id="3_oi6pe"]
 [ext_resource type="Texture2D" uid="uid://bt2hr3tmnqqpr" path="res://Assets/TileSet/1/wasteland (fase 1)/Wasteland_Sky_Without_Sun.png" id="3_yl7jm"]
 [ext_resource type="PackedScene" uid="uid://bfxaf5eewjkhj" path="res://Cenas/player_gato.tscn" id="4_yl7jm"]
+[ext_resource type="PackedScene" uid="uid://csev2kup40sfi" path="res://Cenas/enemy_grunt.tscn" id="6_i20aj"]
+[ext_resource type="PackedScene" uid="uid://daniewfb8flnf" path="res://Cenas/barra_de_vida_gato.tscn" id="7_874vp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i20aj"]
 texture = ExtResource("1_obb1c")
@@ -124,3 +126,14 @@ z_index = -2
 scale = Vector2(2.5, 2.8164063)
 texture = ExtResource("3_oi6pe")
 centered = false
+
+[node name="Enemy_Grunt" parent="." instance=ExtResource("6_i20aj")]
+position = Vector2(359, 520)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Barra_de_vida_gato" parent="CanvasLayer" instance=ExtResource("7_874vp")]
+offset_left = 2.0
+offset_top = 7.0
+offset_right = 216.0
+offset_bottom = 21.0

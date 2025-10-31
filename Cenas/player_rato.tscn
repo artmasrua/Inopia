@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cyqpdc67b8jw3"]
+
+[ext_resource type="Texture2D" uid="uid://ctl7vgk5k43qm" path="res://Assets/player_rato/Exemplo_rato.png" id="1_1gmkw"]
+[ext_resource type="Script" uid="uid://b0fea54yj1f43" path="res://Cenas/player_rato.gd" id="1_gaokn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gaokn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1gmkw")
+}],
+"loop": true,
+"name": &"Exemplo",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gaokn"]
+size = Vector2(21, 18)
+
+[node name="player_rato" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_gaokn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(12, 10)
+sprite_frames = SubResource("SpriteFrames_gaokn")
+animation = &"Exemplo"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, 10)
+shape = SubResource("RectangleShape2D_gaokn")
