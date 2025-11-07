@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://udlahpvugf13"]
+
+[ext_resource type="Texture2D" uid="uid://b4h52vgvxdf20" path="res://Assets/botao/botão_semCor.png" id="1_rsjxq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rsjxq"]
+size = Vector2(8, 3)
+
+[node name="botao" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+texture = ExtResource("1_rsjxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_rsjxq")

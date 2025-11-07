@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://qcccsteecsf4"]
+
+[ext_resource type="Texture2D" uid="uid://fe56u7sp62e4" path="res://Assets/porta-obstaculo/porta-obstaculo_semCor.png" id="1_i4fo3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4fo3"]
+size = Vector2(16, 115)
+
+[node name="porta" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+collision_layer = 2
+
+[node name="sprite_porta" type="Sprite2D" parent="AnimatableBody2D"]
+texture = ExtResource("1_i4fo3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_i4fo3")
