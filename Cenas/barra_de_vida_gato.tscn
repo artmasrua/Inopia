@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://daniewfb8flnf"]
+
+[node name="Barra_de_vida_gato" type="ProgressBar"]
+modulate = Color(0.94509804, 0, 0.07450981, 1)
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 217.0
+offset_bottom = 19.0
+value = 100.0
+show_percentage = false
