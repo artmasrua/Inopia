@@ -106,6 +106,7 @@ size = Vector2(26, 24)
 
 [node name="Enemy_Grunt" type="Area2D"]
 collision_layer = 4
+collision_mask = 3
 script = ExtResource("1_y2hqw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -117,12 +118,12 @@ autoplay = "walk"
 flip_h = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(0, 20)
+target_position = Vector2(0, 23)
 collision_mask = 2
 
 [node name="parede" type="RayCast2D" parent="."]
 position = Vector2(0, 8)
-target_position = Vector2(-12, 0)
+target_position = Vector2(-19, 0)
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
