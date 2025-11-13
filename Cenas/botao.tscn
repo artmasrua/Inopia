@@ -7,7 +7,14 @@ size = Vector2(8, 3)
 
 [node name="botao" type="Area2D"]
 
+<<<<<<< HEAD
 [node name="Sprite2D" type="Sprite2D" parent="."]
+=======
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+>>>>>>> b537d84ef3671adc2694524de1188f49de9d9511
 texture = ExtResource("1_rsjxq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
