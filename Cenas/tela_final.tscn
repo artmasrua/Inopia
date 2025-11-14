@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpq7b88xhndt7"]
+
+[ext_resource type="Texture2D" uid="uid://qtjp3kba2v6u" path="res://Assets/Tela_Final/Space Background.png" id="1_mqjpx"]
+[ext_resource type="Script" uid="uid://lpd6jwfwcvco" path="res://Cenas/tela_final.gd" id="2_fkark"]
+[ext_resource type="FontFile" uid="uid://ktipu4brov01" path="res://Assets/fonte/pixeloid-font/PixeloidSansBold-PKnYd.ttf" id="2_j18o4"]
+[ext_resource type="FontFile" uid="uid://cm3ja5vk1l32d" path="res://Assets/fonte/pixeloid-font/PixeloidSans-mLxMm.ttf" id="3_fkark"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(640, 360)
+texture = ExtResource("1_mqjpx")
+script = ExtResource("2_fkark")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -208.0
+offset_top = -242.0
+offset_right = 235.0
+offset_bottom = -156.0
+theme_override_fonts/font = ExtResource("2_j18o4")
+theme_override_font_sizes/font_size = 70
+text = "PARABÉNS"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -324.0
+offset_top = -124.0
+offset_right = 344.0
+offset_bottom = -84.0
+theme_override_fonts/font = ExtResource("3_fkark")
+theme_override_font_sizes/font_size = 32
+text = "Você conseguiu terminar sua jornada!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.64100003
+anchor_right = 0.504
+anchor_bottom = 0.64100003
+offset_left = -711.12
+offset_top = -456.52002
+offset_right = -571.12
+offset_bottom = -356.52002
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_fkark")
+theme_override_font_sizes/font_size = 50
+text = "Créditos"
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_fkark")
+theme_override_font_sizes/font_size = 50
+text = "Sair"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

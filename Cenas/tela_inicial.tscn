@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbqwowmbt1mki"]
+[gd_scene load_steps=6 format=3 uid="uid://dbqwowmbt1mki"]
 
 [ext_resource type="Script" uid="uid://ja7dqmmthqsp" path="res://Cenas/tela_inicial.gd" id="1_00dnc"]
 [ext_resource type="Texture2D" uid="uid://c4rf2bvadl51r" path="res://Assets/Tela_inicial/tela_inicial_0.png" id="1_b1rrf"]
 [ext_resource type="FontFile" uid="uid://ktipu4brov01" path="res://Assets/fonte/pixeloid-font/PixeloidSansBold-PKnYd.ttf" id="2_ouhyk"]
 [ext_resource type="FontFile" uid="uid://t7pao8phnpul" path="res://Assets/fonte/pixeloid-font/PixeloidMono-d94EV.ttf" id="3_00dnc"]
+[ext_resource type="FontFile" uid="uid://cm3ja5vk1l32d" path="res://Assets/fonte/pixeloid-font/PixeloidSans-mLxMm.ttf" id="5_x33ye"]
 
 [node name="Tela_inicial" type="Node"]
 script = ExtResource("1_00dnc")
@@ -59,6 +60,13 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("3_00dnc")
 theme_override_font_sizes/font_size = 28
 text = "Jogar"
+
+[node name="Button" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x33ye")
+theme_override_font_sizes/font_size = 28
+text = "Créditos
+"
 
 [node name="quit" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2

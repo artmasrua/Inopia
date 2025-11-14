@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp7u6duf5wi0c"]
+
+[ext_resource type="Texture2D" uid="uid://bu8a72u1n3qhi" path="res://Assets/Tela_créditos/Space Background (1).png" id="1_sioja"]
+[ext_resource type="FontFile" uid="uid://cm3ja5vk1l32d" path="res://Assets/fonte/pixeloid-font/PixeloidSans-mLxMm.ttf" id="2_d2n4h"]
+[ext_resource type="FontFile" uid="uid://t7pao8phnpul" path="res://Assets/fonte/pixeloid-font/PixeloidMono-d94EV.ttf" id="3_vvrht"]
+
+[node name="tela_creditos" type="Sprite2D"]
+position = Vector2(640, 360)
+texture = ExtResource("1_sioja")
+
+[node name="Título" type="Label" parent="."]
+offset_left = -251.0
+offset_top = -326.0
+offset_right = 243.0
+offset_bottom = -257.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 50
+text = "Créditos do Inopia"
+
+[node name="Arthur" type="Label" parent="."]
+offset_left = -405.0
+offset_top = -200.0
+offset_right = -263.0
+offset_bottom = -151.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 40
+text = "Arthur"
+
+[node name="Label" type="Label" parent="Arthur"]
+layout_mode = 0
+offset_left = -179.0
+offset_top = 74.0
+offset_right = 341.0
+offset_bottom = 111.0
+theme_override_fonts/font = ExtResource("3_vvrht")
+theme_override_font_sizes/font_size = 30
+text = "Script principal das cenas"
+
+[node name="Jonathan" type="Label" parent="."]
+offset_left = 222.0
+offset_top = -200.0
+offset_right = 422.0
+offset_bottom = -151.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 40
+text = "Jonathan"
+
+[node name="Label" type="Label" parent="Jonathan"]
+layout_mode = 0
+offset_left = -165.0
+offset_top = 78.0
+offset_right = 372.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 30
+text = "Construção das cenas principais"
+
+[node name="Mário" type="Label" parent="."]
+offset_left = -396.0
+offset_top = 83.0
+offset_right = -276.0
+offset_bottom = 132.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 40
+text = "Mário"
+
+[node name="Label" type="Label" parent="Mário"]
+layout_mode = 0
+offset_left = -211.0
+offset_top = 89.0
+offset_right = 342.0
+offset_bottom = 126.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 30
+text = "Ideação da história e jogabilidade"
+
+[node name="Lygia" type="Label" parent="."]
+offset_left = 261.0
+offset_top = 88.0
+offset_right = 377.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 40
+text = "Lygia"
+
+[node name="Label" type="Label" parent="Lygia"]
+layout_mode = 0
+offset_left = -201.0
+offset_top = 88.0
+offset_right = 326.0
+offset_bottom = 125.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 30
+text = "Construção das principais artes"
+
+[node name="Agradecimentos" type="Label" parent="."]
+offset_left = -307.0
+offset_top = 299.0
+offset_right = 279.0
+offset_bottom = 336.0
+theme_override_fonts/font = ExtResource("2_d2n4h")
+theme_override_font_sizes/font_size = 30
+text = "Agradecimentos:  Nádia - Cutscenes"
