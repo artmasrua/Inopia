@@ -1,11 +1,17 @@
 extends ProgressBar
 
+@export var player_rato = CharacterBody2D
 
-# Called when the node enters the scene tree for the first time.
+signal die
+
 func _ready() -> void:
-	pass # Replace with function body.
+	value = player_rato.current_hp
 
+func _on_player_cure() -> void:
+	value += 20
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_player_rato_dano() -> void:
+	player_rato.current_hp -= 20
+	value = player_rato.current_hp
+	if value <= 0:
+		emit_signal("die")

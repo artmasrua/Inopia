@@ -10,11 +10,11 @@ var direcao = true # se for true vai para a esquerda, se for false, vai para a d
  
 func _process(delta):
 	if $RayCast2D2.is_colliding() and $AnimatedSprite2D.flip_h == true:
-		$RayCast2D2.target_position = Vector2(14,0)
+		$RayCast2D2.target_position = Vector2(16,0)
 		$AnimatedSprite2D.flip_h = false
 	
 	elif $RayCast2D2.is_colliding() and $AnimatedSprite2D.flip_h == false:
-		$RayCast2D2.target_position = Vector2(-14,0)
+		$RayCast2D2.target_position = Vector2(-16,0)
 		$AnimatedSprite2D.flip_h = true
 	
 	if $AnimatedSprite2D.flip_h == true:

@@ -9,7 +9,12 @@ extends CharacterBody2D
 @export var max_stomp_degree = 145
 @export var stomp_y_velocity = -150
 
+var current_hp = 100
+var can_be_hited = true
 var is_dead = false
+signal dano
+# signal hit para a anmação de tomar dano
+# signal cure curar, fazer depois
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -31,7 +36,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 
-
 func _on_area_2d_area_entered(area):
 	if not (area is Enemy) or is_dead:
 		return
@@ -42,4 +46,17 @@ func _on_area_2d_area_entered(area):
 		(area as Enemy).die()
 		velocity.y = stomp_y_velocity
 	else:
-		pass #vai tomar dano aqui
+		emit_signal("dano")
+
+func die():
+	speed = 0
+	jump_velocity = 0
+	$"../CanvasLayer/Tela_Morte".visible = true
+
+func _on_barra_de_vida_rato_die() -> void:
+	die()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	emit_signal("dano")
+	

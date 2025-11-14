@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dbcgbjk0pr0de"]
+
+[ext_resource type="Texture2D" uid="uid://d2lj3vxeylctf" path="res://Assets/TileSet/fase-final-pt1/2 Background/1.png" id="1_38057"]
+[ext_resource type="Texture2D" uid="uid://clqmkuq64w0i5" path="res://Assets/TileSet/fase-final-pt1/2 Background/2.png" id="2_7bkjt"]
+[ext_resource type="Texture2D" uid="uid://bpemuqly73wlb" path="res://Assets/TileSet/fase-final-pt1/2 Background/3.png" id="3_mtfx8"]
+[ext_resource type="Texture2D" uid="uid://b8h2oe7s6nanm" path="res://Assets/TileSet/fase-final-pt1/2 Background/4.png" id="4_pgpv6"]
+[ext_resource type="Texture2D" uid="uid://emomwlov3gwc" path="res://Assets/TileSet/fase-final-pt1/2 Background/5.png" id="5_8tjhp"]
+
+[node name="Fase_3" type="Node"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(1280, 0)
+
+[node name="1" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(640.5, 359.5)
+scale = Vector2(2.2204862, 2.2253087)
+texture = ExtResource("1_38057")
+
+[node name="2" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(641, 359)
+scale = Vector2(2.2152777, 2.2222223)
+texture = ExtResource("2_7bkjt")
+
+[node name="3" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(642, 360)
+scale = Vector2(2.2152777, 2.191358)
+texture = ExtResource("3_mtfx8")
+
+[node name="4" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(644.5, 362)
+scale = Vector2(2.2274306, 2.2222223)
+texture = ExtResource("4_pgpv6")
+
+[node name="5" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(640.5, 361.5)
+scale = Vector2(2.2239583, 2.2314816)
+texture = ExtResource("5_8tjhp")
