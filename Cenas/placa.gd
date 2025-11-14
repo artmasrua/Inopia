@@ -4,9 +4,9 @@ extends Node2D
 @onready var texto = $texture
 
 const lines : Array[String] = [
-	"Ola, ",
-	"Oi, vou te ajudar durante a sua jornada",
-	"Aaaaaaaaaa",
+	"Se você é um verdadeiro Gruntaniano,",
+	"voce sabe que a senha da porta é uma multiplicação entre ",
+	"as alavancas de mesma cor e a soma ",
 	"aaaaaaaaa",
 ]
 

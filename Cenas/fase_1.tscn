@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://bfj2ec6ov4y5m"]
+[gd_scene load_steps=45 format=4 uid="uid://bfj2ec6ov4y5m"]
 
 [ext_resource type="Texture2D" uid="uid://dghlv4v17gucf" path="res://Assets/TileSet/fase-1-wasteland/Wasteland-Files.png" id="1_66wdc"]
 [ext_resource type="Script" uid="uid://badjekyxuo7hn" path="res://Cenas/fase_1.gd" id="1_belki"]
@@ -124,6 +124,33 @@ sources/1 = SubResource("TileSetAtlasSource_80uq3")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kagu5"]
 size = Vector2(55, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ky2ih"]
+size = Vector2(17, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hf618"]
+size = Vector2(15, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78xnu"]
+size = Vector2(16, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d573h"]
+size = Vector2(16, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erwjw"]
+size = Vector2(16, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fgr6p"]
+size = Vector2(16, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blagf"]
+size = Vector2(16, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_um6c8"]
+size = Vector2(16, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vp78"]
+size = Vector2(16, 11)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hf618"]
 
@@ -300,7 +327,7 @@ position = Vector2(3936, 581)
 texture = ExtResource("14_1r5fr")
 
 [node name="AlavancaAzul4" type="Sprite2D" parent="Puzzle/alavancas_cima"]
-position = Vector2(3977, 580)
+position = Vector2(3977, 581)
 texture = ExtResource("14_1r5fr")
 
 [node name="AlavancaAzul5" type="Sprite2D" parent="Puzzle/alavancas_cima"]
@@ -312,15 +339,15 @@ position = Vector2(4067, 581)
 texture = ExtResource("14_1r5fr")
 
 [node name="AlavancaAzul7" type="Sprite2D" parent="Puzzle/alavancas_cima"]
-position = Vector2(4110, 582)
+position = Vector2(4110, 581)
 texture = ExtResource("14_1r5fr")
 
 [node name="AlavancaAzul8" type="Sprite2D" parent="Puzzle/alavancas_cima"]
-position = Vector2(4147, 580)
+position = Vector2(4147, 581)
 texture = ExtResource("14_1r5fr")
 
 [node name="AlavancaAzul9" type="Sprite2D" parent="Puzzle/alavancas_cima"]
-position = Vector2(4187, 582)
+position = Vector2(4187, 581)
 texture = ExtResource("14_1r5fr")
 
 [node name="alavancas_baixo" type="Node2D" parent="Puzzle"]
@@ -338,15 +365,15 @@ position = Vector2(3936, 693)
 texture = ExtResource("15_belki")
 
 [node name="AlavancaAmarela4" type="Sprite2D" parent="Puzzle/alavancas_baixo"]
-position = Vector2(3978, 693)
+position = Vector2(3980, 693)
 texture = ExtResource("15_belki")
 
 [node name="AlavancaAmarela5" type="Sprite2D" parent="Puzzle/alavancas_baixo"]
-position = Vector2(4025, 693)
+position = Vector2(4028, 693)
 texture = ExtResource("15_belki")
 
 [node name="AlavancaAmarela6" type="Sprite2D" parent="Puzzle/alavancas_baixo"]
-position = Vector2(4068, 693)
+position = Vector2(4070, 693)
 texture = ExtResource("15_belki")
 
 [node name="AlavancaAmarela7" type="Sprite2D" parent="Puzzle/alavancas_baixo"]
@@ -354,11 +381,11 @@ position = Vector2(4112, 693)
 texture = ExtResource("15_belki")
 
 [node name="AlavancaAmarela8" type="Sprite2D" parent="Puzzle/alavancas_baixo"]
-position = Vector2(4151, 693)
+position = Vector2(4154, 693)
 texture = ExtResource("15_belki")
 
 [node name="AlavancaAmarela9" type="Sprite2D" parent="Puzzle/alavancas_baixo"]
-position = Vector2(4191, 693)
+position = Vector2(4194, 693)
 texture = ExtResource("15_belki")
 
 [node name="cima" type="Node2D" parent="Puzzle"]
@@ -367,37 +394,92 @@ texture = ExtResource("15_belki")
 position = Vector2(3845, 614)
 texture = ExtResource("14_i08y3")
 
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/1"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/1/Area2D"]
+position = Vector2(1.5, -31.5)
+shape = SubResource("RectangleShape2D_ky2ih")
+
 [node name="3" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(3938, 613)
 texture = ExtResource("15_66wdc")
+
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/3/Area2D"]
+position = Vector2(-1.5, -29.5)
+shape = SubResource("RectangleShape2D_hf618")
 
 [node name="2" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(3892, 614)
 texture = ExtResource("16_80uq3")
 
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/2/Area2D"]
+position = Vector2(0, -30.5)
+shape = SubResource("RectangleShape2D_78xnu")
+
 [node name="4" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(3978, 613)
 texture = ExtResource("17_1r5fr")
+
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/4/Area2D"]
+position = Vector2(-1, -29.5)
+shape = SubResource("RectangleShape2D_d573h")
 
 [node name="5" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(4022, 614)
 texture = ExtResource("18_belki")
 
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/5/Area2D"]
+position = Vector2(0, -30.5)
+shape = SubResource("RectangleShape2D_erwjw")
+
 [node name="6" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(4067, 614)
 texture = ExtResource("19_iu4fl")
+
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/6/Area2D"]
+position = Vector2(0, -30.5)
+shape = SubResource("RectangleShape2D_fgr6p")
 
 [node name="7" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(4109, 614)
 texture = ExtResource("20_ky2ih")
 
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/7/Area2D"]
+position = Vector2(1, -30.5)
+shape = SubResource("RectangleShape2D_blagf")
+
 [node name="8" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(4147, 614)
 texture = ExtResource("21_hf618")
 
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/8/Area2D"]
+position = Vector2(0, -30.5)
+shape = SubResource("RectangleShape2D_um6c8")
+
 [node name="9" type="Sprite2D" parent="Puzzle/cima"]
 position = Vector2(4186, 614)
 texture = ExtResource("22_saxck")
+
+[node name="Area2D" type="Area2D" parent="Puzzle/cima/9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/cima/9/Area2D"]
+position = Vector2(1, -30.5)
+shape = SubResource("RectangleShape2D_8vp78")
 
 [node name="baixo" type="Node2D" parent="Puzzle"]
 

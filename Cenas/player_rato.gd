@@ -58,5 +58,4 @@ func _on_barra_de_vida_rato_die() -> void:
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	emit_signal("dano")
-	
+	get_tree().reload_current_scene()
