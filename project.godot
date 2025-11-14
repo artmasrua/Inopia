@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Inopia"
+run/main_scene="uid://bfj2ec6ov4y5m"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
 [autoload]

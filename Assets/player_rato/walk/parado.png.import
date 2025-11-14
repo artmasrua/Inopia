@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvxmhkjcyqeaj"
-path="res://.godot/imported/rato_walk_2.png-8fd6ce0a8e830374f4d3af32248752e0.ctex"
+uid="uid://bb3nm2uy52k8f"
+path="res://.godot/imported/parado.png-c4d3244d0133fdeb1991ff9625005651.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/player_rato/walk/rato_walk_2.png"
-dest_files=["res://.godot/imported/rato_walk_2.png-8fd6ce0a8e830374f4d3af32248752e0.ctex"]
+source_file="res://Assets/player_rato/walk/parado.png"
+dest_files=["res://.godot/imported/parado.png-c4d3244d0133fdeb1991ff9625005651.ctex"]
 
 [params]
 

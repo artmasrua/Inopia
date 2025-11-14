@@ -1,48 +1,84 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyqpdc67b8jw3"]
+[gd_scene load_steps=11 format=3 uid="uid://cyqpdc67b8jw3"]
 
 [ext_resource type="Script" uid="uid://b0fea54yj1f43" path="res://Cenas/player_rato.gd" id="1_gaokn"]
-[ext_resource type="Texture2D" uid="uid://dvxmhkjcyqeaj" path="res://Assets/player_rato/walk/rato_walk_2.png" id="2_gaokn"]
+[ext_resource type="Texture2D" uid="uid://cpi1t3xnsxer8" path="res://Assets/player_rato/walk/pulo.png" id="2_1uc02"]
+[ext_resource type="Texture2D" uid="uid://dxdt8xju85gky" path="res://Assets/player_rato/walk/andando2.png" id="2_gaokn"]
+[ext_resource type="Texture2D" uid="uid://bb3nm2uy52k8f" path="res://Assets/player_rato/walk/parado.png" id="3_kdwpe"]
+[ext_resource type="Texture2D" uid="uid://bgwyor6oho1p4" path="res://Assets/player_rato/walk/andando1.png" id="3_r7xbf"]
+[ext_resource type="Texture2D" uid="uid://qyn4msvjo2sg" path="res://Assets/player_rato/walk/andando3.png" id="6_mju5d"]
+[ext_resource type="Script" uid="uid://dhjafuaxqeh8h" path="res://Cenas/animated_sprite_2d.gd" id="7_p72rp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gaokn"]
 animations = [{
 "frames": [{
+"duration": 1.5,
+"texture": ExtResource("2_1uc02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kdwpe")
+}, {
 "duration": 1.0,
 "texture": ExtResource("2_gaokn")
 }],
 "loop": true,
-"name": &"Walk",
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_kdwpe")
+}],
+"loop": true,
+"name": &"stop",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_r7xbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gaokn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mju5d")
+}],
+"loop": true,
+"name": &"walk",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gaokn"]
-size = Vector2(22, 37.5)
+size = Vector2(24, 37.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r7xbf"]
-size = Vector2(22, 37.5)
+size = Vector2(24, 37.5)
 
 [node name="player_rato" type="CharacterBody2D"]
 collision_mask = 2
 script = ExtResource("1_gaokn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(12, 10)
+position = Vector2(16, 10.999997)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_gaokn")
-animation = &"Walk"
+animation = &"jump"
+frame_progress = 0.5868124
+script = ExtResource("7_p72rp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(17, 10)
+position = Vector2(16, 10)
 shape = SubResource("RectangleShape2D_gaokn")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(17, 10)
+position = Vector2(16, 10)
 shape = SubResource("RectangleShape2D_r7xbf")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(16, 1)
-rect = Rect2(-10, -10, 22, 38)
+rect = Rect2(-12, -10, 24, 38)
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
