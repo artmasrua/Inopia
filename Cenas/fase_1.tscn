@@ -173,7 +173,7 @@ tile_set = SubResource("TileSet_874vp")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Gato" type="Label" parent="CanvasLayer"]
+[node name="Rato" type="Label" parent="CanvasLayer"]
 offset_left = 7.0
 offset_right = 56.0
 offset_bottom = 25.0

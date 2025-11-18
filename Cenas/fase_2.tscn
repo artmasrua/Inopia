@@ -1,9 +1,13 @@
-[gd_scene load_steps=7 format=4 uid="uid://dg25sg6s4q6ox"]
+[gd_scene load_steps=11 format=4 uid="uid://dg25sg6s4q6ox"]
 
 [ext_resource type="Texture2D" uid="uid://bupeaxlqgtn0s" path="res://Assets/TileSet/fase-2-caverna/mainlev_build.png" id="1_c1qc7"]
 [ext_resource type="PackedScene" uid="uid://cyqpdc67b8jw3" path="res://Cenas/player_rato.tscn" id="2_41ryc"]
 [ext_resource type="Texture2D" uid="uid://cr8ytg5c7381u" path="res://Assets/TileSet/fase-2-caverna/background1.png" id="3_jf64f"]
 [ext_resource type="Texture2D" uid="uid://c3ua71w6o0bix" path="res://Assets/TileSet/fase-2-caverna/background2.png" id="4_0v05o"]
+[ext_resource type="FontFile" uid="uid://cm3ja5vk1l32d" path="res://Assets/fonte/pixeloid-font/PixeloidSans-mLxMm.ttf" id="5_ev8p6"]
+[ext_resource type="PackedScene" uid="uid://daniewfb8flnf" path="res://Cenas/barra_de_vida_rato.tscn" id="6_mvsrr"]
+[ext_resource type="Script" uid="uid://c6v2otrhbt1o1" path="res://Cenas/barra_de_vida_rato.gd" id="7_f7siq"]
+[ext_resource type="PackedScene" uid="uid://cld2j402mxysh" path="res://Cenas/tela_morte.tscn" id="8_o7qfa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ev8p6"]
 texture = ExtResource("1_c1qc7")
@@ -997,3 +1001,22 @@ z_index = -2
 position = Vector2(640.5, 361.5)
 scale = Vector2(1.334375, 1.5020833)
 texture = ExtResource("4_0v05o")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Rato" type="Label" parent="CanvasLayer"]
+offset_left = 7.0
+offset_right = 56.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_ev8p6")
+theme_override_font_sizes/font_size = 20
+text = "Rato"
+
+[node name="Barra_de_vida_rato" parent="CanvasLayer" node_paths=PackedStringArray("player_rato") instance=ExtResource("6_mvsrr")]
+offset_top = 28.0
+offset_bottom = 42.0
+script = ExtResource("7_f7siq")
+player_rato = NodePath("")
+
+[node name="Tela_Morte" parent="CanvasLayer" instance=ExtResource("8_o7qfa")]
+visible = false

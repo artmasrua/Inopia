@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bb3nm2uy52k8f" path="res://Assets/player_rato/walk/parado.png" id="3_kdwpe"]
 [ext_resource type="Texture2D" uid="uid://bgwyor6oho1p4" path="res://Assets/player_rato/walk/andando1.png" id="3_r7xbf"]
 [ext_resource type="Texture2D" uid="uid://qyn4msvjo2sg" path="res://Assets/player_rato/walk/andando3.png" id="6_mju5d"]
-[ext_resource type="Script" uid="uid://dhjafuaxqeh8h" path="res://Cenas/animated_sprite_2d.gd" id="7_p72rp"]
+[ext_resource type="Script" path="res://Cenas/animated_sprite_2d.gd" id="7_p72rp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gaokn"]
 animations = [{
@@ -61,8 +61,7 @@ script = ExtResource("1_gaokn")
 position = Vector2(16, 10.999997)
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_gaokn")
-animation = &"jump"
-frame_progress = 0.5868124
+animation = &"stop"
 script = ExtResource("7_p72rp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

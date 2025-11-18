@@ -62,7 +62,6 @@ func _on_area_2d_area_entered(area):
 func die():
 	speed = 0
 	jump_velocity = 0
-<<<<<<< HEAD
 	$"../CanvasLayer/Tela_Morte".visible = true
 
 func _on_barra_de_vida_rato_die() -> void:
@@ -71,6 +70,4 @@ func _on_barra_de_vida_rato_die() -> void:
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	get_tree().reload_current_scene()
-=======
 	$"../CanvasLayer/Tela_Morte".visible
->>>>>>> anna

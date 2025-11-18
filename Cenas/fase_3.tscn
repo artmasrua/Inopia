@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://dbcgbjk0pr0de"]
+[gd_scene load_steps=24 format=4 uid="uid://dbcgbjk0pr0de"]
 
 [ext_resource type="Texture2D" uid="uid://d2lj3vxeylctf" path="res://Assets/TileSet/fase-final-pt1/2 Background/1.png" id="1_38057"]
 [ext_resource type="Texture2D" uid="uid://d2rmk8ujdbajy" path="res://Assets/TileSet/fase-final-pt1/1 Tiles/IndustrialTile_55.png" id="1_pw5qn"]
@@ -12,6 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://emomwlov3gwc" path="res://Assets/TileSet/fase-final-pt1/2 Background/5.png" id="5_8tjhp"]
 [ext_resource type="Texture2D" uid="uid://cmhxx3hx102wj" path="res://Assets/TileSet/fase-final-pt1/1 Tiles/IndustrialTile_03.png" id="6_4qnm5"]
 [ext_resource type="PackedScene" uid="uid://cyqpdc67b8jw3" path="res://Cenas/player_rato.tscn" id="6_8tjhp"]
+[ext_resource type="FontFile" uid="uid://cm3ja5vk1l32d" path="res://Assets/fonte/pixeloid-font/PixeloidSans-mLxMm.ttf" id="13_i2ond"]
+[ext_resource type="PackedScene" uid="uid://daniewfb8flnf" path="res://Cenas/barra_de_vida_rato.tscn" id="14_0d0xf"]
+[ext_resource type="Script" uid="uid://c6v2otrhbt1o1" path="res://Cenas/barra_de_vida_rato.gd" id="15_fn6yg"]
+[ext_resource type="PackedScene" uid="uid://cld2j402mxysh" path="res://Cenas/tela_morte.tscn" id="16_ktj7c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i2ond"]
 texture = ExtResource("1_pw5qn")
@@ -135,3 +139,22 @@ limit_left = 0
 limit_top = -10000641
 limit_right = 9999996
 limit_bottom = 720
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Rato" type="Label" parent="CanvasLayer"]
+offset_left = 7.0
+offset_right = 56.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("13_i2ond")
+theme_override_font_sizes/font_size = 20
+text = "Rato"
+
+[node name="Barra_de_vida_rato" parent="CanvasLayer" node_paths=PackedStringArray("player_rato") instance=ExtResource("14_0d0xf")]
+offset_top = 28.0
+offset_bottom = 42.0
+script = ExtResource("15_fn6yg")
+player_rato = NodePath("")
+
+[node name="Tela_Morte" parent="CanvasLayer" instance=ExtResource("16_ktj7c")]
+visible = false
