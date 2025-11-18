@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t8v08as33gt0"
-valid=false
+uid="uid://dxdt8xju85gky"
+path="res://.godot/imported/andando2.png-beb10057139175deac377d7044ab8226.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://Assets/player_rato/walk/rato_walk_1.png"
+source_file="res://Assets/player_rato/walk/andando2.png"
+dest_files=["res://.godot/imported/andando2.png-beb10057139175deac377d7044ab8226.ctex"]
 
 [params]
 
