@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://u7cgwp3xmp5o"]
+
+[ext_resource type="Script" uid="uid://d0qei331r8he5" path="res://Cenas/cutscene.gd" id="1_iscld"]
+[ext_resource type="Texture2D" uid="uid://bp5x8wlsh1l4k" path="res://Assets/cutscene/cenas_cutscene/cena_1.png" id="2_kucq3"]
+[ext_resource type="Texture2D" uid="uid://dg1hts0pxku7l" path="res://Assets/cutscene/cenas_cutscene/cena_2.png" id="3_s2nl7"]
+[ext_resource type="Texture2D" uid="uid://dnj4kknvmhv58" path="res://Assets/cutscene/cenas_cutscene/cena_3.png" id="4_54bu8"]
+[ext_resource type="Texture2D" uid="uid://vm6ph8opwusi" path="res://Assets/cutscene/cenas_cutscene/cena_4.png" id="5_qg0gj"]
+[ext_resource type="Texture2D" uid="uid://ctlywp7oqklag" path="res://Assets/cutscene/cenas_cutscene/cena_5.png" id="6_cwr37"]
+
+[node name="Cutscene" type="CanvasLayer"]
+script = ExtResource("1_iscld")
+imagens_cutscene = Array[Texture2D]([ExtResource("2_kucq3"), ExtResource("3_s2nl7"), ExtResource("3_s2nl7"), ExtResource("5_qg0gj"), ExtResource("6_cwr37"), ExtResource("6_cwr37"), ExtResource("6_cwr37")])
+textos_cutscene = Array[String](["Em uma galáxia distante, uma corajosa equipe de ratos astronautas embarca em uma missão vital: buscar recursos para salvar seu planeta.", "Viajando pelo espaço, os ratos navegam através de campos de asteroides, cheios de esperança e determinação em seus corações.", "De repente, um asteroide gigante atinge sua nave! Alarmes soam por todos os lados enquanto lutam para manter o controle da espaçonave.", "A nave, gravemente avariada, entra em rota de colisão com um planeta desconhecido. Os ratos se preparam para um pouso forçado.", "Milagrosamente, eles sobrevivem ao impacto! Ao saírem da nave destruída, descobrem estar em um planeta estranho com paisagens nunca vistas.", "Explorando os arredores, avistam uma caverna misteriosa - lá dentro, cristais brilhantes podem ser a chave para consertar a nave!", "Com renovada determinação, os ratos se organizam. Esta pode ser sua única chance de consertar a nave e voltar para casa."])
+texture_tela_vermelha = ExtResource("4_54bu8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -120.0
+offset_right = 40.0
+offset_bottom = -97.0
+grow_horizontal = 2
+grow_vertical = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D_Vermelho" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(10, 10)

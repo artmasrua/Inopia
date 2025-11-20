@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 @export_group("Movimentação")
-@export var speed = 200.0
-@export var jump_velocity = -400.0
+@export var speed = 170.0
+@export var jump_velocity = -350.0
 
 @export_group("Stomping Enemies")
 @export var min_stomp_degree = 35
@@ -15,6 +15,8 @@ var is_dead = false
 signal dano
 
 @onready var sprite := $AnimatedSprite2D
+func _ready() -> void:
+	add_to_group("player")
 
 
 func _physics_process(delta: float) -> void:
@@ -67,7 +69,5 @@ func die():
 func _on_barra_de_vida_rato_die() -> void:
 	die()
 
-
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	get_tree().reload_current_scene()
-	$"../CanvasLayer/Tela_Morte".visible
+	$"../CanvasLayer/Tela_Morte".visible = true

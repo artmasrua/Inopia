@@ -13,12 +13,6 @@ animations = [{
 "frames": [{
 "duration": 1.5,
 "texture": ExtResource("2_1uc02")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_kdwpe")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_gaokn")
 }],
 "loop": true,
 "name": &"jump",
