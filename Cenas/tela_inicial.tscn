@@ -75,4 +75,5 @@ theme_override_font_sizes/font_size = 28
 text = "Sair"
 
 [connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

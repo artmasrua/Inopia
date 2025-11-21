@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgslbqat8vq6a"
+path="res://.godot/imported/quarta fase.mp3-2d0dc7e46d5965a18ec056325b4fe1d1.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/mp3/quarta fase.mp3"
+dest_files=["res://.godot/imported/quarta fase.mp3-2d0dc7e46d5965a18ec056325b4fe1d1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bp7u6duf5wi0c"]
+[gd_scene load_steps=6 format=3 uid="uid://bp7u6duf5wi0c"]
 
 [ext_resource type="Texture2D" uid="uid://bu8a72u1n3qhi" path="res://Assets/Tela_créditos/Space Background (1).png" id="1_sioja"]
 [ext_resource type="FontFile" uid="uid://cm3ja5vk1l32d" path="res://Assets/fonte/pixeloid-font/PixeloidSans-mLxMm.ttf" id="2_d2n4h"]
+[ext_resource type="Script" uid="uid://bd1d7i02iqarb" path="res://Cenas/tela_creditos.gd" id="2_vvrht"]
 [ext_resource type="FontFile" uid="uid://t7pao8phnpul" path="res://Assets/fonte/pixeloid-font/PixeloidMono-d94EV.ttf" id="3_vvrht"]
+[ext_resource type="FontFile" uid="uid://dp16c8fcme7x6" path="res://Assets/dialog_box/RevMiniPixel.ttf" id="5_thpw1"]
 
 [node name="tela_creditos" type="Sprite2D"]
 position = Vector2(640, 360)
 texture = ExtResource("1_sioja")
+script = ExtResource("2_vvrht")
 
 [node name="Título" type="Label" parent="."]
 offset_left = -251.0
@@ -101,3 +104,14 @@ offset_bottom = 336.0
 theme_override_fonts/font = ExtResource("2_d2n4h")
 theme_override_font_sizes/font_size = 30
 text = "Agradecimentos:  Nádia - Cutscenes"
+
+[node name="Sair" type="Button" parent="."]
+offset_left = -48.0
+offset_top = 2.0
+offset_right = 62.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("5_thpw1")
+theme_override_font_sizes/font_size = 48
+text = "Sair"
+
+[connection signal="pressed" from="Sair" to="." method="_on_sair_pressed"]

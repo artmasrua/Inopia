@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://bfj2ec6ov4y5m"]
+[gd_scene load_steps=58 format=4 uid="uid://bfj2ec6ov4y5m"]
 
 [ext_resource type="Texture2D" uid="uid://xvn8cnhgws5o" path="res://Assets/TileSet/fase-1-wasteland/Wasteland-Files.png" id="1_66wdc"]
 [ext_resource type="Script" uid="uid://badjekyxuo7hn" path="res://Cenas/fase_1.gd" id="1_belki"]
@@ -23,33 +23,31 @@
 [ext_resource type="Texture2D" uid="uid://b07o0qc7dxo3" path="res://Assets/dialog_box/tiny-speech-indicators/exclamation-7x8.png" id="17_7vli6"]
 [ext_resource type="Texture2D" uid="uid://rvt3i6usxh48" path="res://Assets/alavanca/amarela/alavanca_amarela.png" id="17_yf3tx"]
 [ext_resource type="Texture2D" uid="uid://cnsfgnscmsga4" path="res://Assets/objetos/3 Objects/5.png" id="18_belki"]
-[ext_resource type="Script" uid="uid://c27uayp2pd4lw" path="res://Alavanca_script/azul_1.gd" id="18_yq6fv"]
+[ext_resource type="Script" uid="uid://c27uayp2pd4lw" path="res://Alavanca_script/fase-1/azul_1.gd" id="18_yq6fv"]
 [ext_resource type="Texture2D" uid="uid://btlo856ycejtm" path="res://Assets/alavanca/amarela/alavanca_amarela-2.png" id="19_78xnu"]
 [ext_resource type="Texture2D" uid="uid://dy7llmd7mtno1" path="res://Assets/objetos/3 Objects/6.png" id="19_iu4fl"]
-[ext_resource type="Script" uid="uid://bt2q1glbduesv" path="res://Alavanca_script/azul_2.gd" id="20_2hp7s"]
+[ext_resource type="Script" uid="uid://bt2q1glbduesv" path="res://Alavanca_script/fase-1/azul_2.gd" id="20_2hp7s"]
 [ext_resource type="Texture2D" uid="uid://cuopl7r0ysv2a" path="res://Assets/objetos/3 Objects/7.png" id="20_ky2ih"]
 [ext_resource type="Texture2D" uid="uid://sluwn1o1hco7" path="res://Assets/objetos/3 Objects/8.png" id="21_hf618"]
-[ext_resource type="Script" uid="uid://c66ouxf18x4ti" path="res://Alavanca_script/azul_3.gd" id="21_hsetw"]
-[ext_resource type="Script" uid="uid://b5sdakwtbrrc0" path="res://Alavanca_script/azul_4.gd" id="22_hlq8j"]
+[ext_resource type="Script" uid="uid://c66ouxf18x4ti" path="res://Alavanca_script/fase-1/azul_3.gd" id="21_hsetw"]
+[ext_resource type="Script" uid="uid://b5sdakwtbrrc0" path="res://Alavanca_script/fase-1/azul_4.gd" id="22_hlq8j"]
 [ext_resource type="Texture2D" uid="uid://ringob84wm8e" path="res://Assets/objetos/3 Objects/9.png" id="22_saxck"]
-[ext_resource type="Script" uid="uid://p86evhod5h3u" path="res://Alavanca_script/azul_5.gd" id="23_ro2uj"]
-[ext_resource type="Script" uid="uid://geanldqwbbuv" path="res://Alavanca_script/azul_6.gd" id="24_n1rrm"]
-[ext_resource type="Script" uid="uid://gonmcm2ykkie" path="res://Alavanca_script/azul_7.gd" id="25_v1ptw"]
-[ext_resource type="Script" uid="uid://dwdk4grqxfw6w" path="res://Alavanca_script/azul_8.gd" id="26_hh0m1"]
-[ext_resource type="Script" uid="uid://q5wdprdhayh1" path="res://Alavanca_script/azul_9.gd" id="27_mbc2k"]
-[ext_resource type="Script" uid="uid://bikqjkbhoqegi" path="res://Alavanca_script/amarela_1.gd" id="31_k604w"]
+[ext_resource type="Script" uid="uid://p86evhod5h3u" path="res://Alavanca_script/fase-1/azul_5.gd" id="23_ro2uj"]
+[ext_resource type="Script" uid="uid://geanldqwbbuv" path="res://Alavanca_script/fase-1/azul_6.gd" id="24_n1rrm"]
+[ext_resource type="Script" uid="uid://gonmcm2ykkie" path="res://Alavanca_script/fase-1/azul_7.gd" id="25_v1ptw"]
+[ext_resource type="Script" uid="uid://dwdk4grqxfw6w" path="res://Alavanca_script/fase-1/azul_8.gd" id="26_hh0m1"]
+[ext_resource type="Script" uid="uid://q5wdprdhayh1" path="res://Alavanca_script/fase-1/azul_9.gd" id="27_mbc2k"]
+[ext_resource type="Script" uid="uid://bikqjkbhoqegi" path="res://Alavanca_script/fase-1/amarela_1.gd" id="31_k604w"]
 [ext_resource type="PackedScene" uid="uid://qcccsteecsf4" path="res://Cenas/porta.tscn" id="32_7vli6"]
-[ext_resource type="Script" uid="uid://dsntfpekagjs3" path="res://Alavanca_script/amarela_2.gd" id="32_ikln5"]
-[ext_resource type="Script" uid="uid://bqs7ji6fr0ncy" path="res://Alavanca_script/amarela_3.gd" id="33_d7unu"]
-[ext_resource type="Script" uid="uid://c4056dyo6vrqg" path="res://Alavanca_script/amarela_4.gd" id="34_omi6q"]
-[ext_resource type="Script" uid="uid://dj3qy05s51sjm" path="res://Alavanca_script/amarela_5.gd" id="35_6a0g0"]
-[ext_resource type="Script" uid="uid://ca7eiwpdx13ra" path="res://Alavanca_script/amarela_6.gd" id="36_mxfu2"]
-[ext_resource type="Script" uid="uid://b3mxomswov0w3" path="res://Alavanca_script/amarela_7.gd" id="37_i2tgt"]
-[ext_resource type="Script" uid="uid://csr00no1i3oc1" path="res://Alavanca_script/amarela_8.gd" id="38_53gfh"]
-[ext_resource type="Script" uid="uid://efg2jab23p84" path="res://Alavanca_script/amarela_9.gd" id="39_saham"]
-[ext_resource type="Script" uid="uid://udlnfkgglyrd" path="res://Cenas/placa_dica.gd" id="48_5lwvs"]
+[ext_resource type="Script" uid="uid://dsntfpekagjs3" path="res://Alavanca_script/fase-1/amarela_2.gd" id="32_ikln5"]
+[ext_resource type="Script" uid="uid://bqs7ji6fr0ncy" path="res://Alavanca_script/fase-1/amarela_3.gd" id="33_d7unu"]
+[ext_resource type="Script" uid="uid://c4056dyo6vrqg" path="res://Alavanca_script/fase-1/amarela_4.gd" id="34_omi6q"]
+[ext_resource type="Script" uid="uid://dj3qy05s51sjm" path="res://Alavanca_script/fase-1/amarela_5.gd" id="35_6a0g0"]
+[ext_resource type="Script" uid="uid://ca7eiwpdx13ra" path="res://Alavanca_script/fase-1/amarela_6.gd" id="36_mxfu2"]
+[ext_resource type="Script" uid="uid://b3mxomswov0w3" path="res://Alavanca_script/fase-1/amarela_7.gd" id="37_i2tgt"]
+[ext_resource type="Script" uid="uid://csr00no1i3oc1" path="res://Alavanca_script/fase-1/amarela_8.gd" id="38_53gfh"]
+[ext_resource type="Script" uid="uid://efg2jab23p84" path="res://Alavanca_script/fase-1/amarela_9.gd" id="39_saham"]
 [ext_resource type="Script" uid="uid://b5ybnnpka5iep" path="res://Cenas/porta.gd" id="48_wkoih"]
-[ext_resource type="Texture2D" uid="uid://ci3tysgwawid4" path="res://Assets/dialog_box/tiny-speech-indicators/tiny_speech_indicators-11x11.png" id="49_hh0m1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_80uq3"]
 texture = ExtResource("1_66wdc")
@@ -193,9 +191,6 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_erwjw"]
 size = Vector2(11.176392, 16)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mbc2k"]
-size = Vector2(36, 42)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vli6"]
 size = Vector2(200, 112)
@@ -840,28 +835,10 @@ vertical_alignment = 1
 position = Vector2(4329, 645)
 script = ExtResource("48_wkoih")
 
-[node name="placa_dica" type="Node2D" parent="Puzzle"]
+[node name="WoodenPlate" type="Sprite2D" parent="Puzzle"]
 position = Vector2(4272, 686)
-script = ExtResource("48_5lwvs")
-
-[node name="texture" type="Sprite2D" parent="Puzzle/placa_dica"]
-visible = false
-position = Vector2(1, -27)
-scale = Vector2(2, 2)
-texture = ExtResource("49_hh0m1")
-region_enabled = true
-region_rect = Rect2(0, 0, 12, 11)
-
-[node name="WoodenPlate" type="Sprite2D" parent="Puzzle/placa_dica"]
 scale = Vector2(2, 2)
 texture = ExtResource("14_hhpk5")
-
-[node name="Area2D" type="Area2D" parent="Puzzle/placa_dica"]
-collision_layer = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle/placa_dica/Area2D"]
-position = Vector2(1, -7)
-shape = SubResource("RectangleShape2D_mbc2k")
 
 [node name="Final_da_fase" type="Node2D" parent="."]
 

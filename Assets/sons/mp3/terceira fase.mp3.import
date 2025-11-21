@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cy5vvlynrciis"
+path="res://.godot/imported/terceira fase.mp3-3fe45114ca32222cbb015f33c68c161a.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/mp3/terceira fase.mp3"
+dest_files=["res://.godot/imported/terceira fase.mp3-3fe45114ca32222cbb015f33c68c161a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
