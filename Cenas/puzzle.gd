@@ -6,17 +6,12 @@ var alavancas_azuis_ativas = []
 var alavancas_amarelas_ativas = []
 @export var numero_da_porta: int = 35
 
-# Vamos buscar as labels manualmente sem @onready
 var label_azul
 var label_amarela
 
 func _ready():
-	print("=== INICIANDO PUZZLE ===")
-	
-	# Buscar as labels de forma mais robusta
 	buscar_labels()
 	
-	# Conectar alavancas
 	var todas_alavancas = get_tree().get_nodes_in_group("alavancas")
 	for alavanca in todas_alavancas:
 		if alavanca.has_signal("alavanca_ativada"):
@@ -24,14 +19,11 @@ func _ready():
 		if alavanca.has_signal("alavanca_desativada"):
 			alavanca.alavanca_desativada.connect(_on_alavanca_desativada)
 	
-	print("Labels encontradas - Azul: ", label_azul != null, " Amarela: ", label_amarela != null)
 
 func buscar_labels():
-	# Tentar vários caminhos possíveis
 	label_azul = get_node_or_null("Multiplicacao_azul")
 	label_amarela = get_node_or_null("Multiplicacao_amarelo")
 	
-	# Se não encontrou, tentar como filhas diretas
 	if not label_azul:
 		for child in get_children():
 			if "azul" in child.name.to_lower() and child is Label:
@@ -44,7 +36,6 @@ func buscar_labels():
 				label_amarela = child
 				break
 	
-	# Se ainda não encontrou, tentar buscar em toda a cena
 	if not label_azul:
 		var labels = get_tree().get_nodes_in_group("labels")
 		for label in labels:
@@ -85,17 +76,15 @@ func verificar_combinacao():
 	for numero in alavancas_amarelas_ativas:
 		multiplicacao_amarela *= numero
 	
-	# CORREÇÃO: INVERTER AS LABELS
 	if label_azul and is_instance_valid(label_azul):
-		label_azul.text = str(multiplicacao_amarela)  # ← Agora mostra amarela
+		label_azul.text = str(multiplicacao_amarela)
 	else:
 		print("❌ Label Azul não disponível")
 	
 	if label_amarela and is_instance_valid(label_amarela):
-		label_amarela.text = str(multiplicacao_azul)  # ← Agora mostra azul
+		label_amarela.text = str(multiplicacao_azul)  
 	else:
 		print("❌ Label Amarela não disponível") 
 	var resultado_final = multiplicacao_azul + multiplicacao_amarela
 	if resultado_final == numero_da_porta:
-		print("🎉 PUZZLE RESOLVIDO! 🎉")
 		puzzle_solved.emit(resultado_final)

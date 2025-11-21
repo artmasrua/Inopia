@@ -12,7 +12,6 @@ var player_proximo: bool = false
 func _ready():
 	add_to_group("alavancas_vermelhas")
 	
-	# Configurar a área de interação
 	$Area2D.body_entered.connect(_on_area2d_body_entered)
 	$Area2D.body_exited.connect(_on_area2d_body_exited)
 	
@@ -39,7 +38,6 @@ func alternar_alavanca():
 		play("ativada")
 		alavanca_ativada.emit(cor_alavanca, numero_alavanca)
 		
-		# Atualização manual de backup
 		var puzzle2 = get_parent()
 		if puzzle2 and puzzle2.has_method("atualizar_label_manual"):
 			puzzle2.atualizar_label_manual(numero_alavanca)

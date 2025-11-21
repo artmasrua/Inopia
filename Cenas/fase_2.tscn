@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://jluh8kkaqewv"]
+[gd_scene load_steps=40 format=4 uid="uid://jluh8kkaqewv"]
 
 [ext_resource type="Script" uid="uid://bxbjc3hjnhlsh" path="res://Cenas/fase_2.gd" id="1_0jtjk"]
 [ext_resource type="Texture2D" uid="uid://cwbcgsc5tj5fj" path="res://Assets/TileSet/fase-1-wasteland/Wasteland-Files-Noite.png" id="2_ou7gt"]
@@ -27,6 +27,9 @@
 [ext_resource type="Texture2D" uid="uid://sluwn1o1hco7" path="res://Assets/objetos/3 Objects/8.png" id="25_k3usc"]
 [ext_resource type="Texture2D" uid="uid://cuopl7r0ysv2a" path="res://Assets/objetos/3 Objects/7.png" id="26_knljx"]
 [ext_resource type="PackedScene" uid="uid://csev2kup40sfi" path="res://Cenas/enemy_grunt.tscn" id="27_5vuuh"]
+[ext_resource type="Texture2D" uid="uid://be1acdoqd8xww" path="res://Assets/wooden_plate.png" id="28_ou7gt"]
+[ext_resource type="Script" uid="uid://6tmxirje3kfj" path="res://Cenas/placa_dica.gd" id="29_6d73a"]
+[ext_resource type="Texture2D" uid="uid://ci3tysgwawid4" path="res://Assets/dialog_box/tiny-speech-indicators/tiny_speech_indicators-11x11.png" id="30_k7do7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g4ksu"]
 texture = ExtResource("2_ou7gt")
@@ -242,6 +245,9 @@ size = Vector2(14.117798, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxjka"]
 size = Vector2(145, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qaxjd"]
+size = Vector2(22.5, 20)
 
 [node name="fase_2" type="Node"]
 script = ExtResource("1_0jtjk")
@@ -468,6 +474,29 @@ position = Vector2(2179, 458)
 [node name="Enemy_Grunt6" parent="Inimigos" instance=ExtResource("27_5vuuh")]
 position = Vector2(2320, 465)
 
+[node name="WoodenPlate" type="Sprite2D" parent="."]
+position = Vector2(3891, 622)
+scale = Vector2(2, 2)
+texture = ExtResource("28_ou7gt")
+
+[node name="placa_dica" type="Area2D" parent="WoodenPlate"]
+collision_layer = 2
+script = ExtResource("29_6d73a")
+dialo_texts = Array[String](["Um desafio simples,", "só para testar você."])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WoodenPlate/placa_dica"]
+position = Vector2(-0.25, 0)
+shape = SubResource("RectangleShape2D_qaxjd")
+
+[node name="Sprite2D" type="Sprite2D" parent="WoodenPlate"]
+visible = false
+position = Vector2(0, -15.5)
+texture = ExtResource("30_k7do7")
+region_enabled = true
+region_rect = Rect2(0, 0, 11, 11)
+
 [connection signal="die" from="CanvasLayer/Barra_de_vida_rato" to="player_rato" method="_on_barra_de_vida_rato_die"]
 [connection signal="dano" from="player_rato" to="CanvasLayer/Barra_de_vida_rato" method="_on_player_rato_dano"]
 [connection signal="body_entered" from="Final_da_fase/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="WoodenPlate/placa_dica" to="WoodenPlate/placa_dica" method="_on_body_entered"]
+[connection signal="body_exited" from="WoodenPlate/placa_dica" to="WoodenPlate/placa_dica" method="_on_body_exited"]

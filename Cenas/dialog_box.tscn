@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://7r35ko8s5di0"]
+
+[ext_resource type="Script" uid="uid://nwon0se2u3ii" path="res://Cenas/dialog_box.gd" id="1_31rfb"]
+[ext_resource type="Texture2D" uid="uid://dp1djtavlkak6" path="res://Assets/dialog_box/Dialog_Box(16 x 16).png" id="1_whfl3"]
+[ext_resource type="FontFile" uid="uid://dp16c8fcme7x6" path="res://Assets/dialog_box/RevMiniPixel.ttf" id="3_d73vq"]
+
+[node name="dialog_box" type="MarginContainer"]
+process_mode = 3
+anchors_preset = -1
+anchor_right = 0.025
+anchor_bottom = 0.037
+offset_bottom = 0.3600006
+size_flags_horizontal = 0
+script = ExtResource("1_31rfb")
+
+[node name="bg_dialog_box" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_whfl3")
+region_rect = Rect2(0, 0, 16, 16)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="text_container" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="text_label" type="Label" parent="text_container"]
+custom_minimum_size = Vector2(200, 20)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_d73vq")
+vertical_alignment = 1
+autowrap_mode = 2

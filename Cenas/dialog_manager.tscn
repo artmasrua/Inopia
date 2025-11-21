@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://r4ng3srmryj5"]
+
+[ext_resource type="Script" uid="uid://bebfa0kfrn31l" path="res://Cenas/dialog_manager.gd" id="1_fwnaa"]
+[ext_resource type="PackedScene" uid="uid://7r35ko8s5di0" path="res://Cenas/dialog_box.tscn" id="2_773pa"]
+
+[node name="DialogManager" type="Node"]
+script = ExtResource("1_fwnaa")
+dialog_scene = ExtResource("2_773pa")

@@ -4,7 +4,7 @@ signal alavanca_ativada(cor, numero)
 signal alavanca_desativada(cor, numero)
 
 @export var cor_alavanca: String = "branca"
-@export var numero_alavanca: int = 17  # Configure: 17, 20 ou 18
+@export var numero_alavanca: int = 17
 
 var esta_ativa: bool = false
 var player_proximo: bool = false
@@ -12,7 +12,6 @@ var player_proximo: bool = false
 func _ready():
 	add_to_group("alavancas_brancas")
 	
-	# Configurar a área de interação
 	$Area2D.body_entered.connect(_on_area2d_body_entered)
 	$Area2D.body_exited.connect(_on_area2d_body_exited)
 	

@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 
 [autoload]
 
-DialogManager="*res://Assets/dialog_box/dialog_manager.gd"
+DialogManager="*res://Cenas/dialog_manager.tscn"
 
 [display]
 

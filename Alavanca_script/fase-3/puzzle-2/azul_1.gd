@@ -3,8 +3,8 @@ extends AnimatedSprite2D
 signal alavanca_ativada(cor, numero)
 signal alavanca_desativada(cor, numero)
 
-@export var cor_alavanca: String = "azul"  # Configure: "azul", "vermelha" ou "amarela"
-@export var numero_alavanca: int = 29  # Configure os valores conforme necessário
+@export var cor_alavanca: String = "azul"  
+@export var numero_alavanca: int = 29  
 
 var esta_ativa: bool = false
 var player_proximo: bool = false

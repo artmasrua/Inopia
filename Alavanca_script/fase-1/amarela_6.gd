@@ -11,9 +11,7 @@ var player_proximo: bool = false
 
 func _ready():
 	add_to_group("alavancas")
-	print("Alavanca pronta: ", name, " - Cor: ", cor_alavanca, " Numero: ", numero_alavanca)
 	
-	# Verificar se tem Area2D
 	if has_node("Area2D"):
 		$Area2D.body_entered.connect(_on_area2d_body_entered)
 		$Area2D.body_exited.connect(_on_area2d_body_exited)
@@ -33,13 +31,11 @@ func _on_area2d_body_exited(body):
 		player_proximo = false
 
 func _process(delta):
-	# Verificar input no _process em vez de _input para melhor detecção
 	if player_proximo and Input.is_action_just_pressed("interagir"):
 		alternar_alavanca()
 
 func alternar_alavanca():
 	esta_ativa = !esta_ativa
-	print("Alternando alavanca ", name, " para: ", esta_ativa)
 	
 	if esta_ativa:
 		play("ativada")

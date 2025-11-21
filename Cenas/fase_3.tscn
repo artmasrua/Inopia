@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://dbcgbjk0pr0de"]
+[gd_scene load_steps=70 format=4 uid="uid://dbcgbjk0pr0de"]
 
 [ext_resource type="Texture2D" uid="uid://bupeaxlqgtn0s" path="res://Assets/TileSet/fase-2-caverna/mainlev_build.png" id="1_kg7lx"]
 [ext_resource type="Script" uid="uid://dm15y0ibu4gh8" path="res://Cenas/fase_3.gd" id="1_uaa4t"]
@@ -31,6 +31,8 @@
 [ext_resource type="Texture2D" uid="uid://dw2brfwlki4lp" path="res://Assets/alavanca/vermelha/alavanca_vermelha.png" id="18_n400l"]
 [ext_resource type="Script" uid="uid://4yqgsqj4gf0w" path="res://Cenas/porta3.gd" id="18_o7fdj"]
 [ext_resource type="Texture2D" uid="uid://dy7llmd7mtno1" path="res://Assets/objetos/3 Objects/6.png" id="18_vpykf"]
+[ext_resource type="Script" uid="uid://c147jtftd886v" path="res://Cenas/placa_1.gd" id="21_agwc0"]
+[ext_resource type="Texture2D" uid="uid://ci3tysgwawid4" path="res://Assets/dialog_box/tiny-speech-indicators/tiny_speech_indicators-11x11.png" id="22_31no8"]
 [ext_resource type="Texture2D" uid="uid://m6mkd6p0q5q5" path="res://Assets/objetos/3 Objects/1.png" id="25_5ea5j"]
 [ext_resource type="Script" uid="uid://cyoybs1ls8wvn" path="res://Cenas/puzzle_4.gd" id="26_id4b3"]
 [ext_resource type="Texture2D" uid="uid://sluwn1o1hco7" path="res://Assets/objetos/3 Objects/8.png" id="26_n400l"]
@@ -50,6 +52,8 @@
 [ext_resource type="Script" uid="uid://dqbjcftbji5j1" path="res://Alavanca_script/fase-3/puzzle-2/verm_2.gd" id="40_m8sn3"]
 [ext_resource type="Script" uid="uid://dkbfb22h15n4d" path="res://Alavanca_script/fase-3/puzzle-2/verm_3.gd" id="41_bctky"]
 [ext_resource type="Script" uid="uid://bcocqptwma750" path="res://Cenas/porta4.gd" id="49_cotmm"]
+[ext_resource type="Script" uid="uid://crvm3m5qs7pgi" path="res://Cenas/placa_2.gd" id="52_6lwnu"]
+[ext_resource type="Script" uid="uid://c3fr5kow8wx74" path="res://Cenas/placa_3.gd" id="54_6lwnu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i2ond"]
 texture = ExtResource("1_kg7lx")
@@ -1317,6 +1321,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i2ond"]
 size = Vector2(16.470337, 16.470604)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxdgy"]
+size = Vector2(21, 18)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_v0028"]
 animations = [{
 "frames": [{
@@ -1397,8 +1404,13 @@ func _process(delta: float) -> void:
 	pass
 "
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nosyk"]
+size = Vector2(22, 21)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_id4b3"]
 size = Vector2(131, 107)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31no8"]
 
 [node name="Fase_3" type="Node"]
 script = ExtResource("1_uaa4t")
@@ -1537,8 +1549,25 @@ position = Vector2(2773, 519)
 script = ExtResource("18_o7fdj")
 
 [node name="WoodenPlate" type="Sprite2D" parent="Puzzle3"]
-position = Vector2(2498, 568)
+position = Vector2(2498, 561)
+scale = Vector2(2, 2)
 texture = ExtResource("12_hnvsb")
+
+[node name="placa_1" type="Area2D" parent="Puzzle3/WoodenPlate"]
+collision_layer = 2
+script = ExtResource("21_agwc0")
+dialo_texts = Array[String](["Você está quase lá!", "Para abrir essa porta, vou te contar uma história:", "Em um belo dia de manhã, ", "eu estava nessa caverna e peguei 10 cristais.", "À tarde, eu vendi esses cristais ", "cada um valia 3 moedas.", "À noite, comprei algo para comer,", "que custou 12 moedas.", "A resposta para abrir a porta ", "é a quantidade de moedas que eu fiquei no final do dia."])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle3/WoodenPlate/placa_1"]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_rxdgy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Puzzle3/WoodenPlate"]
+visible = false
+position = Vector2(0, -15)
+texture = ExtResource("22_31no8")
+region_enabled = true
+region_rect = Rect2(0, 0, 11, 11)
 
 [node name="1" type="Sprite2D" parent="Puzzle3"]
 position = Vector2(2690, 607)
@@ -2059,8 +2088,25 @@ position = Vector2(3606, 519)
 script = ExtResource("49_cotmm")
 
 [node name="WoodenPlate" type="Sprite2D" parent="Puzzle4"]
-position = Vector2(2947, 568)
+position = Vector2(2947, 560)
+scale = Vector2(2, 2)
 texture = ExtResource("12_hnvsb")
+
+[node name="placa_2" type="Area2D" parent="Puzzle4/WoodenPlate"]
+collision_layer = 2
+script = ExtResource("52_6lwnu")
+dialo_texts = Array[String](["Se você chegou até aqui,", "sabe o que deve fazer.", "Este é o desafio final."])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puzzle4/WoodenPlate/placa_2"]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_nosyk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Puzzle4/WoodenPlate"]
+visible = false
+position = Vector2(0, -13.5)
+texture = ExtResource("22_31no8")
+region_enabled = true
+region_rect = Rect2(0, 0, 11, 11)
 
 [node name="Minerio" type="Node2D" parent="."]
 
@@ -2084,8 +2130,29 @@ region_enabled = true
 region_rect = Rect2(35, 0, 7, 8)
 
 [node name="WoodenPlate" type="Sprite2D" parent="Minerio"]
-position = Vector2(3839, 568)
+position = Vector2(3839, 560)
+scale = Vector2(2, 2)
 texture = ExtResource("12_hnvsb")
 
+[node name="placa_3" type="Area2D" parent="Minerio/WoodenPlate"]
+script = ExtResource("54_6lwnu")
+dialo_texts = Array[String](["Parabéns, você conseguiu."])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Minerio/WoodenPlate/placa_3"]
+shape = SubResource("RectangleShape2D_31no8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Minerio/WoodenPlate"]
+visible = false
+position = Vector2(-0.5, -14)
+texture = ExtResource("22_31no8")
+region_enabled = true
+region_rect = Rect2(0, 0, 11, 11)
+
+[connection signal="body_entered" from="Puzzle3/WoodenPlate/placa_1" to="Puzzle3/WoodenPlate/placa_1" method="_on_body_entered"]
+[connection signal="body_exited" from="Puzzle3/WoodenPlate/placa_1" to="Puzzle3/WoodenPlate/placa_1" method="_on_body_exited"]
+[connection signal="body_entered" from="Puzzle4/WoodenPlate/placa_2" to="Puzzle4/WoodenPlate/placa_2" method="_on_body_entered"]
+[connection signal="body_exited" from="Puzzle4/WoodenPlate/placa_2" to="Puzzle4/WoodenPlate/placa_2" method="_on_body_exited"]
 [connection signal="body_entered" from="Minerio/Minerio/Minerio_area" to="." method="_on_minerio_area_body_entered"]
 [connection signal="body_exited" from="Minerio/Minerio/Minerio_area" to="." method="_on_minerio_area_body_exited"]
+[connection signal="body_entered" from="Minerio/WoodenPlate/placa_3" to="Minerio/WoodenPlate/placa_3" method="_on_body_entered"]
+[connection signal="body_exited" from="Minerio/WoodenPlate/placa_3" to="Minerio/WoodenPlate/placa_3" method="_on_body_exited"]
